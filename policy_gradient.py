@@ -125,3 +125,4 @@ with tf.Session() as sess:
         env.render()
         action_val, gradients_val = sess.run([action, gradients], feed_dict={X: obs.reshape(1, n_inputs)})
         obs, reward, done, info = env.step(action_val[0][0])
+#end
